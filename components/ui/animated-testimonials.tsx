@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 type Testimonial = {
-  key: string;
+  key: string | null;
   quote: string;
   name: string;
   designation: string;

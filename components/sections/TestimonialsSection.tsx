@@ -1,5 +1,4 @@
 import { defineQuery } from "next-sanity";
-import React from "react";
 import { urlFor } from "@/sanity/lib/image";
 import { sanityFetch } from "@/sanity/lib/live";
 import { AnimatedTestimonials } from "../ui/animated-testimonials";
