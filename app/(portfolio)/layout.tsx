@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "iamaks portfolio",
+  title: "Ashish Kumar Sahu",
   description: "iamaks portfolio",
 };
 
