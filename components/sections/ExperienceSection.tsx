@@ -1,8 +1,8 @@
+import Image from "next/image";
+import { defineQuery, PortableText } from "next-sanity";
+import React from "react";
 import { urlFor } from "@/sanity/lib/image";
 import { sanityFetch } from "@/sanity/lib/live";
-import { defineQuery, PortableText } from "next-sanity";
-import Image from "next/image";
-import React from "react";
 
 const EXPERIENCE_QUERY =
   defineQuery(`*[_type == "experience"] | order(startDate desc){

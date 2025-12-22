@@ -1,10 +1,10 @@
-import { urlFor } from "@/sanity/lib/image";
-import { sanityFetch } from "@/sanity/lib/live";
 import { IconExternalLink } from "@tabler/icons-react";
-import { defineQuery } from "next-sanity";
 import Image from "next/image";
 import Link from "next/link";
+import { defineQuery } from "next-sanity";
 import React from "react";
+import { urlFor } from "@/sanity/lib/image";
+import { sanityFetch } from "@/sanity/lib/live";
 import { CometCard } from "../ui/comet-card";
 
 const CERTIFICATIONS_QUERY =

@@ -1,11 +1,11 @@
-import { sanityFetch } from "@/sanity/lib/live";
+import Link from "next/link";
 import { defineQuery } from "next-sanity";
 import React from "react";
-import { BackgroundRippleEffect } from "../ui/background-ripple-effect";
-import Link from "next/link";
-import { LayoutTextFlip } from "../ui/layout-text-flip";
 import { urlFor } from "@/sanity/lib/image";
+import { sanityFetch } from "@/sanity/lib/live";
 import ProfileImage from "../ProfileImage";
+import { BackgroundRippleEffect } from "../ui/background-ripple-effect";
+import { LayoutTextFlip } from "../ui/layout-text-flip";
 
 const HERO_QUERY = defineQuery(`*[_id == "singleton-profile"][0]{
   firstName,

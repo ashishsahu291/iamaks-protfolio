@@ -1,6 +1,6 @@
-import React from "react";
 import * as TablerIcons from "@tabler/icons-react";
 import { IconQuestionMark } from "@tabler/icons-react";
+import type React from "react";
 
 interface DynamicIconProps {
   iconName: string;

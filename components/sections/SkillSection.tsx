@@ -1,7 +1,7 @@
-import { sanityFetch } from "@/sanity/lib/live";
-import React from "react";
-import SkillsChart from "./SkillsChart";
 import { defineQuery } from "next-sanity";
+import React from "react";
+import { sanityFetch } from "@/sanity/lib/live";
+import SkillsChart from "./SkillsChart";
 
 const SKILLS_QUERY =
   defineQuery(`*[_type == "skill"] | order(category asc, order asc){

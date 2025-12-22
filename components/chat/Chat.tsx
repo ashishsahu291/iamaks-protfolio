@@ -1,9 +1,9 @@
 "use client";
 
-import { CHAT_PROFILE_QUERYResult } from "@/sanity.types";
-import React from "react";
 import { ChatKit, useChatKit } from "@openai/chatkit-react";
+import React from "react";
 import { createSession } from "@/actions/create-session";
+import type { CHAT_PROFILE_QUERYResult } from "@/sanity.types";
 import { useSidebar } from "../ui/sidebar";
 
 function Chat({ profile }: { profile: CHAT_PROFILE_QUERYResult | null }) {
@@ -31,7 +31,7 @@ function Chat({ profile }: { profile: CHAT_PROFILE_QUERYResult | null }) {
     theme: {},
     header: {
       title: {
-        text: "Chat with " + profile?.firstName || "Me",
+        text: `Chat with ${profile?.firstName}` || "Me",
       },
       leftAction: {
         icon: "close",

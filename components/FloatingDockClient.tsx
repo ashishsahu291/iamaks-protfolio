@@ -1,11 +1,11 @@
 "use client";
 
 import { useClerk, useUser } from "@clerk/nextjs";
-import { useSidebar } from "./ui/sidebar";
-import { useState } from "react";
 import { IconLogout, IconMenu2, IconX } from "@tabler/icons-react";
 import Link from "next/link";
+import { useState } from "react";
 import DynamicIcon from "./DynamicIcon";
+import { useSidebar } from "./ui/sidebar";
 
 interface NavItem {
   title?: string | null;

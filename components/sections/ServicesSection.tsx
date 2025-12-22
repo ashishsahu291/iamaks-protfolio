@@ -1,10 +1,10 @@
-import { urlFor } from "@/sanity/lib/image";
-import { sanityFetch } from "@/sanity/lib/live";
 import { IconCheck } from "@tabler/icons-react";
 import { Star } from "lucide-react";
-import { defineQuery, PortableText } from "next-sanity";
 import Image from "next/image";
+import { defineQuery, PortableText } from "next-sanity";
 import React from "react";
+import { urlFor } from "@/sanity/lib/image";
+import { sanityFetch } from "@/sanity/lib/live";
 
 const SERVICES_QUERY =
   defineQuery(`*[_type == "service"] | order(order asc, _createdAt desc){

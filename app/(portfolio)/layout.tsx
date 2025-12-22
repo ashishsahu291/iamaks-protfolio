@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
-import { SanityLive } from "@/sanity/lib/live";
-import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "@/components/app-sidebar";
-import SidebarToggle from "@/components/SidebarToggle";
 import Script from "next/script";
-import FloatingDock from "@/components/FloatingDock";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import { AppSidebar } from "@/components/app-sidebar";
 import DarkModeToggle from "@/components/DarkModeToggle";
+import FloatingDock from "@/components/FloatingDock";
+import SidebarToggle from "@/components/SidebarToggle";
+import { ThemeProvider } from "@/components/ThemeProvider";
+import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
+import { SanityLive } from "@/sanity/lib/live";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
