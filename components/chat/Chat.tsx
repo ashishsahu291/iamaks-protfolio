@@ -1,7 +1,6 @@
 "use client";
 
 import { ChatKit, useChatKit } from "@openai/chatkit-react";
-import React from "react";
 import { createSession } from "@/actions/create-session";
 import type { CHAT_PROFILE_QUERYResult } from "@/sanity.types";
 import { useSidebar } from "../ui/sidebar";

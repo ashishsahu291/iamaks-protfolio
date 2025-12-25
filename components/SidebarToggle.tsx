@@ -1,7 +1,6 @@
 "use client";
 import { SignInButton, useUser } from "@clerk/nextjs";
 import { MessageSquare, Sparkles } from "lucide-react";
-import React from "react";
 import { useSidebar } from "./ui/sidebar";
 
 function SidebarToggle() {

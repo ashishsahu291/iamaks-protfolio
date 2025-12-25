@@ -2,7 +2,6 @@ import { IconCheck } from "@tabler/icons-react";
 import { Star } from "lucide-react";
 import Image from "next/image";
 import { defineQuery, PortableText } from "next-sanity";
-import React from "react";
 import { urlFor } from "@/sanity/lib/image";
 import { sanityFetch } from "@/sanity/lib/live";
 

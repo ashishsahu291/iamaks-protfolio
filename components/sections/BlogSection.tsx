@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { defineQuery } from "next-sanity";
-import React from "react";
 import { urlFor } from "@/sanity/lib/image";
 import { sanityFetch } from "@/sanity/lib/live";
 

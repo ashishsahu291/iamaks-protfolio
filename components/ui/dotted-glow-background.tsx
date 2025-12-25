@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type DottedGlowBackgroundProps = {
   className?: string;
@@ -87,10 +87,7 @@ export const DottedGlowBackground = ({
     const root = document.documentElement;
     if (root.classList.contains("dark")) return true;
     if (root.classList.contains("light")) return false;
-    return (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    );
+    return window.matchMedia?.("(prefers-color-scheme: dark)").matches;
   };
 
   // Keep resolved colors in sync with theme changes and prop updates
@@ -146,6 +143,8 @@ export const DottedGlowBackground = ({
     colorDarkVar,
     glowColorLightVar,
     glowColorDarkVar,
+    detectDarkMode,
+    resolveCssVariable,
   ]);
 
   useEffect(() => {
@@ -207,7 +206,7 @@ export const DottedGlowBackground = ({
 
     const draw = (now: number) => {
       if (stopped) return;
-      const dt = (now - last) / 1000; // seconds
+      const _dt = (now - last) / 1000; // seconds
       last = now;
       const { width, height } = container.getBoundingClientRect();
 

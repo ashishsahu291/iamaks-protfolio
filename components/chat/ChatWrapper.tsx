@@ -1,5 +1,4 @@
 import { defineQuery } from "next-sanity";
-import React from "react";
 import { sanityFetch } from "@/sanity/lib/live";
 import Chat from "./Chat";
 
